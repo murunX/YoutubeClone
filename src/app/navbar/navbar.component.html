@@ -1,0 +1,40 @@
+<div class="side">
+  <div class="nav">
+    <a class="nav-link" *ngFor="let btn of buttons.slice(0, 3)">
+      <img [src]="btn.icon" alt="" />
+      <span>{{ btn.title }}</span>
+    </a>
+  </div>
+  <hr />
+  <div class="nav">
+    <a class="nav-link">
+      <span class="You">You</span>
+      <img src="./assets/images/next.png" alt="" class="You" />
+    </a>
+    <a class="nav-link" *ngFor="let btn of buttons.slice(3, 8)">
+      <img [src]="btn.icon" alt="" class="img" />
+      <span class>{{ btn.title }}</span>
+    </a>
+  </div>
+  <hr />
+  <div class="sub">
+    <h1>Subscriptions</h1>
+    <a class="sub-link" *ngFor="let item of channels">
+      <img [src]="item.profileImage" alt="" />
+      <span [title]="item.author">{{ item.author }}</span>
+    </a>
+
+    <a class="nav-link">
+      <img src="./assets/images/more.png" alt="" />
+      <span>Show 608 more</span>
+    </a>
+  </div>
+  <hr />
+  <div class="sub">
+    <h1>Explore</h1>
+    <a class="nav-link" *ngFor="let btn of buttons.slice(3.8)">
+      <img [src]="btn.icon" alt="" />
+      <span>{{ btn.title }}</span>
+    </a>
+  </div>
+</div>

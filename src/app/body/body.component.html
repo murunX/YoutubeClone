@@ -1,0 +1,26 @@
+<div class="test3">
+    <div class="interest">
+        <button *ngFor="let btn of  interestlist"  >{{btn.button}}</button>
+        <img src="./assets/images/next.png" alt="" class="int"/>
+    </div> 
+    <div class="videos">
+          <div class="video" [routerLink]="['/detail',item.id]" [title]="item.title"  *ngFor="let item of video"> 
+             <div class="thumbnail">
+                <img [src]="item.banner" alt=""/>
+              </div>
+                 <div class="details">
+                   <div class="author">
+                    <img [src]="item.profileImage" alt="" />
+                   </div>
+                   <div class="title">
+                      <h3>
+                          {{item.title}}
+                       </h3>
+                       <a *ngIf="item.id !== 45" > 
+                              {{item.author}}
+                        </a>
+                        <span> {{item.views}}k views • 3 months ago </span>
+                  </div>
+            </div>
+      </div>
+</div>

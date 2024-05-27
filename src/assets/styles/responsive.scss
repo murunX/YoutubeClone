@@ -1,0 +1,15 @@
+@media (max-width: 768px) {
+    .search-container {
+        width: 100%;  
+        max-width: 300px;  
+        margin: 0 auto;  
+    }
+}
+@media (max-width: 768px) {
+    .side {
+      
+    }
+    .search-container {
+      display: none;
+    }
+  }

@@ -1,0 +1,17 @@
+@mixin flex-space(){
+  display: flex;
+  align-items: center;
+}
+.header{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: antiquewhite;
+  justify-content: space-between;
+}
+.header-left{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: auto;
+}
